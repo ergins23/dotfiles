@@ -1,0 +1,26 @@
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = auto
+[user]
+	name = Andy Schott
+	email = schottac@gmail.com
+[core]
+	editor = /usr/local/bin/bbedit
+	excludesfile = /Users/schottac/.gitignore
+[credential]
+	helper = osxkeychain
+[diff]
+  tool = "bbdiff"
+[difftool]
+  prompt = false
+[difftool "bbdiff"]
+  cmd = /usr/local/bin/bbdiff --wait --resume "$LOCAL" "$REMOTE"
+[push]
+	defualt = simple
+	default = simple
+[help]
+	format = web
+[alias]
+	co = checkout
