@@ -9,8 +9,6 @@
 ; Common Lisp (required for JS2)
 (require 'cl)
 
-(require 'maxframe)
-
 ;; ***** Additional Modules *****
 
 ;; ***** Settings *****
@@ -33,9 +31,6 @@
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
-
-; Maximize on startup
-(add-hook 'window-setup-hook 'maximize-frame t)
 
 ; Format the title bar to be the buffer name
 (setq frame-title-format "%b")
@@ -83,26 +78,6 @@
 (global-set-key "\C-ca" 'org-agenda)
 
 ;; ***** Custom Modes *****
-; JS2 mode
-(autoload 'js2-mode "js2-mode" nil t)
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
-
-; JS2 Highlight Variables
-(require 'js2-highlight-vars)
-(defun my-js2-mode-hook ()
-	(if (featurep 'js2-highlight-vars)
-		(js2-highlight-vars-mode)))
-(add-hook 'js2-mode-hook 'my-js2-mode-hook)
-
-; nXML mode
-; should change this to autoload - what are its parameters?
-(load "nxml-mode/rng-auto.el")
-(add-to-list 'auto-mode-alist '("\\.xml" . nxml-mode))
-(add-to-list 'auto-mode-alist '("\\.xsl" . nxml-mode))
-(add-to-list 'auto-mode-alist '("\\.plist" . nxml-mode))
-
-; Org-mode
-(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 
 ;; ***** Functions *****
 (defun remove-dos-eol ()
