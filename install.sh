@@ -1,16 +1,16 @@
 #!/bin/bash
 
 rm -f ~/.bash_profile
-ln -s ./bash_profile ~/.bash_profile
+ln ./bash_profile ~/.bash_profile
 
 rm -f ~/.bashrc
-ln -s ./bashrc ~/.bashrc
+ln ./bashrc ~/.bashrc
 
 rm -f ~/.emacs
-ln -s ./emacs ~/.emacs
+ln ./emacs ~/.emacs
 
 rm -f ~/.gitconfig
-ln -s ./gitconfig ~/.gitconfig
+ln ./gitconfig ~/.gitconfig
 
 rm -f ~/.gitignore
-ln -s ./gitignore ~/.gitignore
+ln ./gitignore ~/.gitignore
