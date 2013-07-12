@@ -11,12 +11,6 @@
 	excludesfile = /Users/schottac/.gitignore
 [credential]
 	helper = osxkeychain
-[diff]
-  tool = "bbdiff"
-[difftool]
-  prompt = false
-[difftool "bbdiff"]
-  cmd = /usr/local/bin/bbdiff --wait --resume "$LOCAL" "$REMOTE"
 [push]
 	defualt = simple
 	default = simple
