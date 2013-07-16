@@ -7,8 +7,7 @@
 	name = Andy Schott
 	email = schottac@gmail.com
 [core]
-	editor = /usr/local/bin/bbedit
-	excludesfile = /Users/schottac/.gitignore
+	excludesfile = /Users/andys/.gitignore
 [credential]
 	helper = osxkeychain
 [push]
