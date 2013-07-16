@@ -2,3 +2,6 @@
 
 # BBEdit Project Files
 *.bbprojectd
+
+# XCode
+xcuserdata
