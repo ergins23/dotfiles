@@ -4,11 +4,10 @@
 	branch = auto
 	ui = auto
 [user]
-	name = Andy Schott
-	email = schottac@gmail.com
+	name = Ergin Salih
+	email = ergins@yahoo.com
 [core]
-	editor = /usr/local/bin/bbedit
-	excludesfile = /Users/schottac/.gitignore
+	excludesfile = /Users/ergins/.gitignore
 [credential]
 	helper = osxkeychain
 [push]
